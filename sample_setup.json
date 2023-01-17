@@ -1,0 +1,28 @@
+{
+    "RandomSample" : {
+        "method": "RandomSampling",
+        "n" : 2,
+        "train_params" : {
+            "start_samples" : 500
+        }
+    },
+    "EntropySampling" : {
+        "method": "EntropySampling",
+        "n" : 2,
+        "train_params" : {
+            "start_samples" : 500,
+            "n_iters" : 3,
+            "samples" : 100
+        }
+    },
+    "EpistemicSampling" : {
+        "method": "EpistemicSampling",
+        "n" : 3,
+        "train_params" : {
+            "start_samples" : 500,
+            "n_iters" : 3,
+            "samples" : 100,
+            "ensemble_size" : 2
+        }
+    }
+}
